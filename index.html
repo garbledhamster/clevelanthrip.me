@@ -1,49 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Primary Meta Tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Cleve Lanthrip | Personal & Professional Portfolio</title>
+    <meta name="description" content="Discover the culinary artistry, family values, and creative passions of Cleve Lanthrip. A professional chef, family man, and creator who infuses life, art, and beats into everything he touches."/>
+    <meta name="keywords" content="Cleve Lanthrip, Chef, Culinary, Art, Beats, Family, Professional"/>
+    <meta name="author" content="Cleve Lanthrip"/>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Cleve Lanthrip | Personal & Professional Portfolio">
+    <meta property="og:description" content="Discover the culinary artistry, family values, and creative passions of Cleve Lanthrip.">
+    <meta property="og:image" content="https://picsum.photos/1200/630" />
+    <meta property="og:url" content="https://www.example.com/clevelanthrip">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cleve Lanthrip | Personal & Professional Portfolio">
+    <meta name="twitter:description" content="Discover the culinary artistry, family values, and creative passions of Cleve Lanthrip.">
+    <meta name="twitter:image" content="https://picsum.photos/1200/630">
+
+    <!-- Favicon and App Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+    <link rel="manifest" href="images/icons/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="data/styles.css"/>
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body data-spy="scroll" data-target="#sideNav" data-offset="70">
     <!-- Side Navigation (Desktop) -->
     <nav id="sideNav" class="navbar navbar-light bg-light flex-column align-items-start p-3 sticky-top d-none d-md-flex">
-        <a class="navbar-brand" href="#home">🍽 Cleve</a>
+        <a class="navbar-brand" href="#home">
+            <i data-feather="coffee"></i> Cleve
+        </a>
         <nav class="nav flex-column">
-            <a class="nav-link" href="#home">🏠 Home</a>
-            <a class="nav-link" href="#professional">👨‍🍳 Professional</a>
-            <a class="nav-link" href="#family">👨‍👩‍👧‍👦 Family</a>
-            <a class="nav-link" href="#art">🎨 Art & Beats</a>
-            <a class="nav-link" href="#contact">📩 Contact</a>
+            <a class="nav-link" href="#home"><i data-feather="home"></i> Home</a>
+            <a class="nav-link" href="#professional"><i data-feather="briefcase"></i> Professional</a>
+            <a class="nav-link" href="#family"><i data-feather="users"></i> Family</a>
+            <a class="nav-link" href="#art"><i data-feather="brush"></i> Art & Beats</a>
+            <a class="nav-link" href="#contact"><i data-feather="mail"></i> Contact</a>
         </nav>
     </nav>
 
     <!-- Top Navigation (Mobile) -->
     <nav class="navbar navbar-light bg-light d-md-none sticky-top">
-        <a class="navbar-brand" href="#home">🍽 Cleve</a>
+        <a class="navbar-brand" href="#home"><i data-feather="coffee"></i> Cleve</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobileMenu">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse" id="mobileMenu">
             <nav class="nav flex-column">
-                <a class="nav-link" href="#home">🏠 Home</a>
-                <a class="nav-link" href="#professional">👨‍🍳 Professional</a>
-                <a class="nav-link" href="#family">👨‍👩‍👧‍👦 Family</a>
-                <a class="nav-link" href="#art">🎨 Art & Beats</a>
-                <a class="nav-link" href="#contact">📩 Contact</a>
+                <a class="nav-link" href="#home"><i data-feather="home"></i> Home</a>
+                <a class="nav-link" href="#professional"><i data-feather="briefcase"></i> Professional</a>
+                <a class="nav-link" href="#family"><i data-feather="users"></i> Family</a>
+                <a class="nav-link" href="#art"><i data-feather="brush"></i> Art & Beats</a>
+                <a class="nav-link" href="#contact"><i data-feather="mail"></i> Contact</a>
             </nav>
         </div>
     </nav>
 
     <main class="container-fluid">
         <!-- Home Section -->
-        <section id="home" class="p-5 section-home d-flex align-items-center">
-            <div class="container text-white">
-                <h1 class="display-4">🍽 Cleve Lanthrip</h1>
+        <section id="home" class="p-5 section-home d-flex align-items-center" style="background-image: url('https://picsum.photos/1600/900?random=1'); background-size: cover; background-position: center;">
+            <div class="container text-white" style="background-color: rgba(0,0,0,0.5); padding: 2rem;">
+                <h1 class="display-4"><i data-feather="coffee"></i> Cleve Lanthrip</h1>
                 <p class="lead">A culinary professional, family man, and creative soul.</p>
                 <a href="#professional" class="btn btn-primary">Discover My Work</a>
             </div>
@@ -52,40 +83,63 @@
         <!-- Professional Section -->
         <section id="professional" class="p-5 section-professional">
             <div class="container">
-                <h2 class="mb-4">👨‍🍳 Professional</h2>
-                <p>
-                    Cleve has honed his craft working in renowned kitchens, including some of the oldest family-owned Italian restaurants in Saint Paul. He brings intellect, skill, and resilience to his culinary artistry.
-                </p>
-                <p>
-                    His ability to adapt in challenging environments, combined with his passion for cooking, allows him to create dishes that reflect the elements of water, fire, and earth.
-                </p>
-                <div id="professional-cards" class="mt-4"></div>
+                <h2 class="mb-4"><i data-feather="briefcase"></i> Professional</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <img src="https://picsum.photos/600/400?random=2" class="img-fluid rounded" alt="Culinary dish by Cleve">
+                    </div>
+                    <div class="col-md-6">
+                        <p>
+                            Cleve has honed his craft working in renowned kitchens, including some of the oldest family-owned Italian restaurants in Saint Paul. He brings intellect, skill, and resilience to his culinary artistry.
+                        </p>
+                        <p>
+                            His ability to adapt in challenging environments, combined with his passion for cooking, allows him to create dishes that reflect the elements of water, fire, and earth.
+                        </p>
+                    </div>
+                </div>
+                <div id="professional-cards" class="mt-4">
+                    <!-- Dynamically loaded from cards.json - you can add images from picsum here too -->
+                </div>
             </div>
         </section>
 
         <!-- Family Section -->
         <section id="family" class="p-5 section-family bg-light">
             <div class="container">
-                <h2 class="mb-4">👨‍👩‍👧‍👦 Family</h2>
-                <p>
-                    Behind every great chef is a strong support system. Cleve’s wife, Ashley, is a pillar of strength and pride, protecting her family and encouraging Cleve through every challenge.
-                </p>
-                <p>
-                    His children each bring their own unique gifts:
-                </p>
-                <ul id="family-list">
-                    <!-- Dynamically loaded from cards.json -->
-                </ul>
+                <h2 class="mb-4"><i data-feather="users"></i> Family</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <img src="https://picsum.photos/600/400?random=3" class="img-fluid rounded" alt="Cleve's family">
+                    </div>
+                    <div class="col-md-6">
+                        <p>
+                            Behind every great chef is a strong support system. Cleve’s wife, Ashley, is a pillar of strength and pride, protecting her family and encouraging Cleve through every challenge.
+                        </p>
+                        <p>
+                            His children each bring their own unique gifts:
+                        </p>
+                        <ul id="family-list">
+                            <!-- Dynamically loaded from cards.json -->
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Art & Beats Section -->
         <section id="art" class="p-5 section-art">
             <div class="container">
-                <h2 class="mb-4">🎨 Art & Beats</h2>
-                <p>
-                    Cleve’s creativity extends beyond the kitchen. He creates beats that capture the complexity and balance of his culinary work, and explores various forms of art and culture, fueling continual personal growth.
-                </p>
+                <h2 class="mb-4"><i data-feather="brush"></i> Art & Beats</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <img src="https://picsum.photos/600/400?random=4" class="img-fluid rounded" alt="Cleve's artwork or beats creation">
+                    </div>
+                    <div class="col-md-6">
+                        <p>
+                            Cleve’s creativity extends beyond the kitchen. He creates beats that capture the complexity and balance of his culinary work, and explores various forms of art and culture, fueling continual personal growth.
+                        </p>
+                    </div>
+                </div>
                 <div id="art-list" class="mt-4">
                     <!-- Dynamically loaded from cards.json -->
                 </div>
@@ -95,7 +149,7 @@
         <!-- Contact Section -->
         <section id="contact" class="p-5 section-contact bg-light">
             <div class="container">
-                <h2 class="mb-4">📩 Contact</h2>
+                <h2 class="mb-4"><i data-feather="mail"></i> Contact</h2>
                 <p>Interested in connecting with Cleve? Reach out below.</p>
                 <form>
                     <div class="form-group">
@@ -119,6 +173,10 @@
     <!-- Optional JavaScript -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <!-- Feather Icons Initialization -->
+    <script>
+        feather.replace()
+    </script>
     <!-- Custom Scripts -->
     <script src="data/scripts.js"></script>
 </body>
