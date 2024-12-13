@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Cleve Lanthrip | Personal & Professional Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="data/styles.css"/>
+</head>
+<body data-spy="scroll" data-target="#sideNav" data-offset="70">
+    <!-- Side Navigation (Desktop) -->
+    <nav id="sideNav" class="navbar navbar-light bg-light flex-column align-items-start p-3 sticky-top d-none d-md-flex">
+        <a class="navbar-brand" href="#home">🍽 Cleve</a>
+        <nav class="nav flex-column">
+            <a class="nav-link" href="#home">🏠 Home</a>
+            <a class="nav-link" href="#professional">👨‍🍳 Professional</a>
+            <a class="nav-link" href="#family">👨‍👩‍👧‍👦 Family</a>
+            <a class="nav-link" href="#art">🎨 Art & Beats</a>
+            <a class="nav-link" href="#contact">📩 Contact</a>
+        </nav>
+    </nav>
+
+    <!-- Top Navigation (Mobile) -->
+    <nav class="navbar navbar-light bg-light d-md-none sticky-top">
+        <a class="navbar-brand" href="#home">🍽 Cleve</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobileMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse" id="mobileMenu">
+            <nav class="nav flex-column">
+                <a class="nav-link" href="#home">🏠 Home</a>
+                <a class="nav-link" href="#professional">👨‍🍳 Professional</a>
+                <a class="nav-link" href="#family">👨‍👩‍👧‍👦 Family</a>
+                <a class="nav-link" href="#art">🎨 Art & Beats</a>
+                <a class="nav-link" href="#contact">📩 Contact</a>
+            </nav>
+        </div>
+    </nav>
+
+    <main class="container-fluid">
+        <!-- Home Section -->
+        <section id="home" class="p-5 section-home d-flex align-items-center">
+            <div class="container text-white">
+                <h1 class="display-4">🍽 Cleve Lanthrip</h1>
+                <p class="lead">A culinary professional, family man, and creative soul.</p>
+                <a href="#professional" class="btn btn-primary">Discover My Work</a>
+            </div>
+        </section>
+
+        <!-- Professional Section -->
+        <section id="professional" class="p-5 section-professional">
+            <div class="container">
+                <h2 class="mb-4">👨‍🍳 Professional</h2>
+                <p>
+                    Cleve has honed his craft working in renowned kitchens, including some of the oldest family-owned Italian restaurants in Saint Paul. He brings intellect, skill, and resilience to his culinary artistry.
+                </p>
+                <p>
+                    His ability to adapt in challenging environments, combined with his passion for cooking, allows him to create dishes that reflect the elements of water, fire, and earth.
+                </p>
+                <div id="professional-cards" class="mt-4"></div>
+            </div>
+        </section>
+
+        <!-- Family Section -->
+        <section id="family" class="p-5 section-family bg-light">
+            <div class="container">
+                <h2 class="mb-4">👨‍👩‍👧‍👦 Family</h2>
+                <p>
+                    Behind every great chef is a strong support system. Cleve’s wife, Ashley, is a pillar of strength and pride, protecting her family and encouraging Cleve through every challenge.
+                </p>
+                <p>
+                    His children each bring their own unique gifts:
+                </p>
+                <ul id="family-list">
+                    <!-- Dynamically loaded from cards.json -->
+                </ul>
+            </div>
+        </section>
+
+        <!-- Art & Beats Section -->
+        <section id="art" class="p-5 section-art">
+            <div class="container">
+                <h2 class="mb-4">🎨 Art & Beats</h2>
+                <p>
+                    Cleve’s creativity extends beyond the kitchen. He creates beats that capture the complexity and balance of his culinary work, and explores various forms of art and culture, fueling continual personal growth.
+                </p>
+                <div id="art-list" class="mt-4">
+                    <!-- Dynamically loaded from cards.json -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="p-5 section-contact bg-light">
+            <div class="container">
+                <h2 class="mb-4">📩 Contact</h2>
+                <p>Interested in connecting with Cleve? Reach out below.</p>
+                <form>
+                    <div class="form-group">
+                        <label for="nameInput">Name</label>
+                        <input type="text" class="form-control" id="nameInput" placeholder="Your Name"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="emailInput">Email</label>
+                        <input type="email" class="form-control" id="emailInput" placeholder="Your Email"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="messageInput">Message</label>
+                        <textarea class="form-control" id="messageInput" rows="4" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Optional JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom Scripts -->
+    <script src="data/scripts.js"></script>
+</body>
+</html>

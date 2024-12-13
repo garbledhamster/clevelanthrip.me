@@ -1,0 +1,48 @@
+{
+    "professional": [
+        {
+            "title": "Italian Cuisine Mastery",
+            "description": "Crafting authentic Italian dishes at one of Saint Paul's oldest family-owned restaurants."
+        },
+        {
+            "title": "Adaptable Culinary Artist",
+            "description": "Experience working in various kitchen environments, refining techniques in sauces, plating, and flavor profiles."
+        }
+    ],
+    "family": [
+        {
+            "name": "Ashley",
+            "role": "Wife",
+            "traits": "Strong, protective, prideful",
+            "description": "A pillar of support and strength, Ashley stands proudly beside Cleve, encouraging him through every challenge."
+        },
+        {
+            "name": "Rachel",
+            "role": "Daughter",
+            "traits": "Art Savant",
+            "description": "A gifted artist whose talents, if refined, can rival those of college professionals."
+        },
+        {
+            "name": "Arya",
+            "role": "Daughter",
+            "traits": "Intuitive, Observant",
+            "description": "Keen observer, always eager to learn and absorb new knowledge."
+        },
+        {
+            "name": "Kiro (Buddah)",
+            "role": "Son",
+            "traits": "Kind, Passionate",
+            "description": "Living life to the fullest, always finding fun and joy in any situation."
+        }
+    ],
+    "art": [
+        {
+            "type": "Music Production",
+            "description": "Crafting beats that mirror the complexity and balance found in fine cuisine."
+        },
+        {
+            "type": "Art & Culture Exploration",
+            "description": "Continuously evolving through exposure to various forms of art, leading to personal and spiritual growth."
+        }
+    ]
+}
