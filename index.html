@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <!-- Primary Meta Tags -->
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Cleve Lanthrip | Personal & Professional Portfolio</title>
     <meta name="description" content="Discover the culinary artistry, family values, and creative passions of Cleve Lanthrip. A professional chef, family man, and creator who infuses life, art, and beats into everything he touches."/>
@@ -26,7 +26,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
-    <link rel="manifest" href="images/icons/site.webmanifest">
+    <link rel="manifest" href="manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
 
@@ -39,44 +39,64 @@
     <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body data-spy="scroll" data-target="#sideNav" data-offset="70">
+    <!-- Tiny Modal Structure -->
+    <div id="success-modal" class="tiny-modal">
+      <div class="tiny-modal-content">
+        <span class="tiny-modal-close" onclick="closeModal()">&times;</span>
+        <h4>Success!</h4>
+        <p>Your message was sent successfully. Thank you for reaching out!</p>
+        <button onclick="closeModal()" class="btn btn-primary">Close</button>
+      </div>
+    </div>
+
     <!-- Side Navigation (Desktop) -->
     <nav id="sideNav" class="navbar navbar-light bg-light flex-column align-items-start p-3 sticky-top d-none d-md-flex">
         <a class="navbar-brand" href="#home">
-            <i data-feather="coffee"></i> Cleve
+            <img src="images/logos/5.png" alt="Cleve Logo" style="height: 24px;"> Cleve
         </a>
         <nav class="nav flex-column">
             <a class="nav-link" href="#home"><i data-feather="home"></i> Home</a>
             <a class="nav-link" href="#professional"><i data-feather="briefcase"></i> Professional</a>
             <a class="nav-link" href="#family"><i data-feather="users"></i> Family</a>
-            <a class="nav-link" href="#art"><i data-feather="brush"></i> Art & Beats</a>
+            <a class="nav-link" href="#art"><i data-feather="heart"></i> Art & Beats</a>
             <a class="nav-link" href="#contact"><i data-feather="mail"></i> Contact</a>
         </nav>
     </nav>
+    
 
-    <!-- Top Navigation (Mobile) -->
-    <nav class="navbar navbar-light bg-light d-md-none sticky-top">
-        <a class="navbar-brand" href="#home"><i data-feather="coffee"></i> Cleve</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobileMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse" id="mobileMenu">
-            <nav class="nav flex-column">
-                <a class="nav-link" href="#home"><i data-feather="home"></i> Home</a>
-                <a class="nav-link" href="#professional"><i data-feather="briefcase"></i> Professional</a>
-                <a class="nav-link" href="#family"><i data-feather="users"></i> Family</a>
-                <a class="nav-link" href="#art"><i data-feather="brush"></i> Art & Beats</a>
-                <a class="nav-link" href="#contact"><i data-feather="mail"></i> Contact</a>
-            </nav>
-        </div>
-    </nav>
+<!-- Top Navigation (Mobile) -->
+<nav class="navbar navbar-light bg-light d-md-none sticky-top">
+    <a class="navbar-brand" href="#home">
+        <img src="images/logos/5.png" alt="Cleve Logo" style="height: 24px;">
+        Cleve
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobileMenu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse" id="mobileMenu">
+        <nav class="nav flex-column">
+            <a class="nav-link" href="#home"><i data-feather="home"></i> Home</a>
+            <a class="nav-link" href="#professional"><i data-feather="briefcase"></i> Professional</a>
+            <a class="nav-link" href="#family"><i data-feather="users"></i> Family</a>
+            <a class="nav-link" href="#art"><i data-feather="heart"></i> Art & Beats</a>
+            <a class="nav-link" href="#contact"><i data-feather="mail"></i> Contact</a>
+        </nav>
+    </div>
+</nav>
+
 
     <main class="container-fluid">
         <!-- Home Section -->
-        <section id="home" class="p-5 section-home d-flex align-items-center" style="background-image: url('https://picsum.photos/1600/900?random=1'); background-size: cover; background-position: center;">
-            <div class="container text-white" style="background-color: rgba(0,0,0,0.5); padding: 2rem;">
-                <h1 class="display-4"><i data-feather="coffee"></i> Cleve Lanthrip</h1>
-                <p class="lead">A culinary professional, family man, and creative soul.</p>
-                <a href="#professional" class="btn btn-primary">Discover My Work</a>
+        <section id="home" class="p-5 section-home d-flex align-items-center" 
+                 style="background-color: white; background-size: cover; background-position: center;">
+            <div class="container text-black" style="background-color: white; padding: 2rem;">
+                <div class="text-center">
+                    <img src="images/logos/2.png" alt="Cleve Lanthrip" 
+                         class="rounded-circle mb-4 home-section-image">
+                    <h1 class="display-4"><i data-feather="briefcase"></i> | <i data-feather="users"></i> | <i data-feather="heart"></i></h1>
+                    <p class="lead">A culinary professional, family man, and creative soul.</p>
+                    <a href="#professional" class="btn btn-primary">Discover My Work</a>
+                </div>
             </div>
         </section>
 
@@ -98,7 +118,7 @@
                     </div>
                 </div>
                 <div id="professional-cards" class="mt-4">
-                    <!-- Dynamically loaded from cards.json - you can add images from picsum here too -->
+                    <!-- Dynamically loaded from cards.json -->
                 </div>
             </div>
         </section>
@@ -129,7 +149,7 @@
         <!-- Art & Beats Section -->
         <section id="art" class="p-5 section-art">
             <div class="container">
-                <h2 class="mb-4"><i data-feather="brush"></i> Art & Beats</h2>
+                <h2 class="mb-4"><i data-feather="heart"></i> Art & Beats</h2>
                 <div class="row">
                     <div class="col-md-6 mb-3">
                         <img src="https://picsum.photos/600/400?random=4" class="img-fluid rounded" alt="Cleve's artwork or beats creation">
@@ -151,19 +171,13 @@
             <div class="container">
                 <h2 class="mb-4"><i data-feather="mail"></i> Contact</h2>
                 <p>Interested in connecting with Cleve? Reach out below.</p>
-                <form>
-                    <div class="form-group">
-                        <label for="nameInput">Name</label>
-                        <input type="text" class="form-control" id="nameInput" placeholder="Your Name"/>
-                    </div>
-                    <div class="form-group">
-                        <label for="emailInput">Email</label>
-                        <input type="email" class="form-control" id="emailInput" placeholder="Your Email"/>
-                    </div>
-                    <div class="form-group">
-                        <label for="messageInput">Message</label>
-                        <textarea class="form-control" id="messageInput" rows="4" placeholder="Your Message"></textarea>
-                    </div>
+                <form id="contact-form">
+                    <label>Your email:
+                        <input type="email" name="email" required>
+                    </label>
+                    <label>Your message:
+                        <textarea name="message" rows="4" required></textarea>
+                    </label>
                     <button type="submit" class="btn btn-primary">Send</button>
                 </form>
             </div>
@@ -179,5 +193,44 @@
     </script>
     <!-- Custom Scripts -->
     <script src="data/scripts.js"></script>
+
+    <!-- Load and populate from cards.json -->
+    <script>
+      fetch('data/cards.json')
+        .then(response => response.json())
+        .then(data => {
+          // Populate professional-cards
+          const profContainer = document.getElementById('professional-cards');
+          data.professional.forEach(item => {
+            const card = document.createElement('div');
+            card.className = 'card mb-3';
+            card.innerHTML = `
+              <div class="card-body">
+                <h5 class="card-title">${item.title}</h5>
+                <p class="card-text">${item.description}</p>
+              </div>
+            `;
+            profContainer.appendChild(card);
+          });
+
+          // Populate family-list
+          const familyList = document.getElementById('family-list');
+          data.family.forEach(member => {
+            const li = document.createElement('li');
+            li.innerHTML = `<strong>${member.name}</strong> (${member.role}): ${member.traits} - ${member.description}`;
+            familyList.appendChild(li);
+          });
+
+          // Populate art-list
+          const artList = document.getElementById('art-list');
+          data.art.forEach(item => {
+            const artDiv = document.createElement('div');
+            artDiv.className = 'mb-3';
+            artDiv.innerHTML = `<h5>${item.type}</h5><p>${item.description}</p>`;
+            artList.appendChild(artDiv);
+          });
+        })
+        .catch(error => console.error('Error loading cards.json:', error));
+    </script>
 </body>
 </html>
